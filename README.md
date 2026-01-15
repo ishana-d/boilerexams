@@ -19,8 +19,8 @@ api/questions/[id].js
 * I added this after deploying to Vercel as it was only working locally before. Used AI to debug that.
 
 src/components/Question.jsx
-* Renders the question text, answer choices, visual feedback for selected, correct, and incorrect answers
-* Receives all data and callbacks from App.jsx.
+* Renders the question text, answer choices, visual feedback for answer state (ex. green on correct)
+* Receives all data from App.jsx.
 
 src/components/MathRender.jsx
 * Handles rendering Markdown content that includes LaTeX
@@ -32,7 +32,7 @@ src/App.jsx
 * Handles submission and review state
 * Calculates and displays the final score
 * Allows restarting the quiz
-* All core application state and logic live here.
+* All core application state and logic
 
 src/App.css and src/index.css
 * Contain global and feature-specific styling
