@@ -13,12 +13,12 @@ export default async function handler(req, res) {
     if (!response.ok) {
       return res
         .status(response.status)
-        .json({ error: "Upstream API error" });
+        .json({ error: "error" });
     }
 
     const data = await response.json();
     res.status(200).json(data);
   } catch (error) {
-    res.status(500).json({ error: "Server error fetching question" });
+    res.status(500).json({ error: "error fetching question" });
   }
 }
