@@ -1,0 +1,23 @@
+/* global styling */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+button {
+  font: inherit;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
