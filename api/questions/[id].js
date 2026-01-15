@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      `https://api.boilerexams.com/question/${id}`
+      `https://api.boilerexams.com/questions/${id}`
     );
 
     if (!response.ok) {
